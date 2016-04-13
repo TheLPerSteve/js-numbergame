@@ -6,6 +6,9 @@ var game = function() {
 	if(userChoice > 10) {
 		console.log("Please only choose numbers between 1 and 10!");
 	}
+	else if(userChoice < 1) {
+		console.log("Please only choose numbers between 1 and 10!");
+	}
 	else {
 		if(userChoice == pcChoice) {
 			console.log("You win!");
