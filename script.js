@@ -3,10 +3,7 @@ var game = function() {
 	var pcChoice = Math.floor(Math.random() * (10 - 1 + 1)) + 1; 
 
 	console.log(pcChoice);	
-	if(userChoice > 10) {
-		console.log("Please only choose numbers between 1 and 10!");
-	}
-	else if(userChoice < 1) {
+	if(userChoice > 10 || userChoice < 1) {
 		console.log("Please only choose numbers between 1 and 10!");
 	}
 	else {
